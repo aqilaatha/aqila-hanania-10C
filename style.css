@@ -1,0 +1,269 @@
+body {
+    background-color: rgb(112, 158, 222);
+    font-family: Arial, sans-serif;
+    color: #07040f;
+    margin: 20px;
+}
+
+h1 {
+    color: #000000;
+    background-color: rgb(112, 158, 222);
+    text-align: center;
+}
+
+h2 {
+    color: #010c18;
+    text-align: left;
+}
+
+p {
+    font-size: 18px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.daftar-produk {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.produk {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.produk img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.produk h2 {
+    font-size: 20px;
+    color: #15334f;
+}
+
+.produk h3 {
+    font-size: 16px;
+    color: #264a6d;
+}
+
+.harga {
+    font-weight: bold;
+    color: #224467;
+}
+
+.deskripsi {
+    font-size: 14px;
+    color: #4072a3;
+}
+
+.artikel {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    background-color: #4072a3;
+    font-family: Georgia, serif;
+    line-height: 1.8;
+}
+
+.artikel .penulis {
+    font-style: italic;
+    color: #0a294b;
+    margin-bottom: 20px;
+}
+
+.artikel .sampul {
+    width: 180px;
+    float: right;
+    margin: 0 0 20px 20px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+}
+
+.artikel blockquote {
+    font-style: italic;
+    padding-left: 20px;
+    margin: 20px 0;
+    border-left: 4px solid #39658b;
+    color: #0b294e;
+    background-color: #4a7aa9;
+}
+
+.btn-kembali {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 16px;
+    background-color: #3d668f;
+    color: rgb(114, 144, 187);
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.btn-kembali:hover {
+    background-color: #4072a3;
+}
+
+.formulir {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #5199e0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 30px auto;
+    background: rgb(56, 120, 173);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.info {
+    margin-bottom: 30px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #3f79ae;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: rgb(41, 89, 140);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #333;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background: #f2f3f4;
+    color: rgb(47, 98, 129);
+}
+
+.event-box {
+    width: 80%;
+    max-width: 800px;
+    margin: 30px auto;
+    background: rgb(55, 98, 167);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.promo {
+    border-left: 6px solid rgb(0, 102, 255);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #333;
+    color: rgb(51, 103, 145);
+    margin-top: 40px;
+}
+

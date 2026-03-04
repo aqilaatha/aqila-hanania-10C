@@ -1,75 +1,174 @@
+/* IMPORT FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* ===== GLOBAL ===== */
 body {
-    background-color: rgb(112, 158, 222);
-    font-family: Arial, sans-serif;
-    color: #07040f;
-    margin: 20px;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #89c2ff, #5b86e5);
+    color: #1f2f46;
 }
 
-h1 {
-    color: #000000;
-    background-color: rgb(112, 158, 222);
+/* ===== NAVBAR ===== */
+nav {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    padding: 18px;
     text-align: center;
 }
 
-h2 {
-    color: #010c18;
-    text-align: left;
+nav a {
+    text-decoration: none;
+    margin: 0 12px;
+    padding: 10px 25px;
+    border-radius: 30px;
+    background: white;
+    color: #3a4a6b;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
 }
 
-p {
-    font-size: 18px;
-    text-align: left;
-    line-height: 1.5;
+nav a:hover {
+    background: #3a7bd5;
+    color: white;
+    transform: translateY(-3px);
 }
 
+/* ===== JUDUL ===== */
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 42px;
+    color: white;
+}
+
+/* ===== PRODUK GRID ===== */
 .daftar-produk {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    padding: 50px;
 }
 
+/* ===== CARD PRODUK ===== */
 .produk {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 15px;
-    border-radius: 10px;
+    background: white;
+    border-radius: 25px;
+    padding: 25px;
     text-align: center;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+}
+
+.produk:hover {
+    transform: translateY(-10px);
 }
 
 .produk img {
-    width: 150px;
+    width: 90px;   /* gambar lebih kecil */
     height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
 }
 
 .produk h2 {
-    font-size: 20px;
-    color: #15334f;
-}
-
-.produk h3 {
-    font-size: 16px;
-    color: #264a6d;
+    margin: 10px 0 5px;
 }
 
 .harga {
     font-weight: bold;
-    color: #224467;
+    color: #3a7bd5;
 }
 
 .deskripsi {
     font-size: 14px;
-    color: #4072a3;
+    color: #555;
+}
+
+/* ===== FORM ===== */
+.formulir {
+    max-width: 750px;
+    margin: 50px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* 2 KOLOM FORM */
+.formulir form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+form label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* INPUT */
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* TEXTAREA FULL LEBAR */
+form textarea {
+    grid-column: span 2;
+    resize: none;
+}
+
+/* BUTTON FULL LEBAR */
+form button {
+    grid-column: span 2;
+    padding: 14px;
+    border-radius: 30px;
+    border: none;
+    background: #3a7bd5;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+form button:hover {
+    background: #1e5fbf;
+    transform: scale(1.03);
+}
+
+/* ===== EVENT BOX ===== */
+.event-box {
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    background: rgba(255,255,255,0.15);
+    color: white;
 }
 
 .artikel {
     max-width: 700px;
     margin: auto;
     padding: 20px;
-    background-color: #4072a3;
+    background-color: #ffffff;
     font-family: Georgia, serif;
     line-height: 1.8;
 }
@@ -92,16 +191,16 @@ p {
     font-style: italic;
     padding-left: 20px;
     margin: 20px 0;
-    border-left: 4px solid #39658b;
-    color: #0b294e;
-    background-color: #4a7aa9;
+    border-left: 4px solid #1b476d;
+    color: #000307;
+    background-color: #6e9bc8;
 }
 
 .btn-kembali {
     display: inline-block;
     margin-top: 30px;
     padding: 10px 16px;
-    background-color: #3d668f;
+    background-color: #ffffff;
     color: rgb(114, 144, 187);
     text-decoration: none;
     border-radius: 4px;
@@ -111,159 +210,54 @@ p {
     background-color: #4072a3;
 }
 
+/* ===== FORM KECIL & RAPI ===== */
+
 .formulir {
-    max-width: 600px;
-    margin: auto;
-    padding: 20px;
-    background-color: #5199e0;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
+    max-width: 500px;          /* batas lebar */
+    margin: 60px auto;         /* tengah */
+    padding: 30px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
 
 form label {
     display: block;
-    margin-top: 10px;
-    font-weight: bold;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
 
 form input,
-form select,
 form textarea {
     width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: 15px;
     border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+form textarea {
+    height: 120px;   /* tinggi pesan */
+    resize: none;
 }
 
 form button {
-    background-color: #3498db;
-    color: white;
-    padding: 10px 15px;
+    width: auto;                 /* nggak full lebar */
+    padding: 10px 25px;
+    margin: 20px auto 0;         /* tengah */
+    display: block;
+    border-radius: 25px;
     border: none;
-    border-radius: 5px;
+    background: #3a7bd5;
+    color: white;
+    font-weight: bold;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 
 form button:hover {
-    background-color: #2980b9;
-}
- body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-}
-
-nav {
-    background-color: #333;
-    padding: 10px;
-    text-align: center;
-}
-
-nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: #ffd700;
-}
-
-.container {
-    width: 80%;
-    max-width: 900px;
-    margin: 30px auto;
-    background: rgb(56, 120, 173);
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-h1, h2 {
-    text-align: center;
-}
-
-.info {
-    margin-bottom: 30px;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 8px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    border: 1px solid #3f79ae;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: rgb(41, 89, 140);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f4f4f4;
-}
-
-nav {
-    background-color: #333;
-    padding: 12px;
-    text-align: center;
-}
-
-nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: #ffd700;
-}
-
-header {
-    text-align: center;
-    padding: 30px;
-    background: #f2f3f4;
-    color: rgb(47, 98, 129);
-}
-
-.event-box {
-    width: 80%;
-    max-width: 800px;
-    margin: 30px auto;
-    background: rgb(55, 98, 167);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.promo {
-    border-left: 6px solid rgb(0, 102, 255);
-}
-
-h2 {
-    margin-top: 0;
-}
-
-footer {
-    text-align: center;
-    padding: 15px;
-    background: #333;
-    color: rgb(51, 103, 145);
-    margin-top: 40px;
+    background: #1e5fbf;
+    transform: scale(1.05);
 }
 
